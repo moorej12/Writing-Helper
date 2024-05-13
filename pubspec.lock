@@ -192,10 +192,11 @@ packages:
   speech_to_text:
     dependency: "direct main"
     description:
-      name: speech_to_text
-      sha256: "771686424c8b065b814823d63245c593f8a6f066537d658c837bfe51887ac4ce"
-      url: "https://pub.dev"
-    source: hosted
+      path: speech_to_text
+      ref: main
+      resolved-ref: "263f6fab7a7b9721d0e951bf1875519883bad198"
+      url: "https://github.com/moorej12/speech_to_text.git"
+    source: git
     version: "6.6.1"
   speech_to_text_macos:
     dependency: transitive
