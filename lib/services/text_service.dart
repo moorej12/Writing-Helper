@@ -13,10 +13,16 @@ class TextService {
     listenService.textStream.listen((newText) {
       updateText(newText);
     });
+    text = listenService.text;
   }
 
   updateText(String newText) {
     text = newText;
     textStreamController.sink.add(text);
+  }
+
+  clearText() {
+    text = "";
+    textStreamController.sink.add("");
   }
 }

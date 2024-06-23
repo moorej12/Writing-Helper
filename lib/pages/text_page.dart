@@ -46,10 +46,12 @@ class TextPage extends StatelessWidget {
                     color: Colors.white,
                   ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       IconButton(
                         icon: const Icon(Icons.delete),
                         onPressed: () {
+                          textService.clearText();
                           Navigator.pop(context);
                         },
                       ),

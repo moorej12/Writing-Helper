@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:writing_help/pages/start_page.dart';
 import 'package:writing_help/services/listen_service.dart';
+import 'package:writing_help/services/locale_storage.dart';
+import 'package:writing_help/services/settings_service.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: StartPage(
-        listenService: ListenService(),
+        listenService: ListenService(SettingsService(LocaleStorage())),
       ),
     );
   }
